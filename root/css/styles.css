@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*BARRA DE NAVECACION*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    position: relative;
+    top: -0.4rem;
+    padding-top: 0.5rem;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: rgb(32, 33, 36);
+    
+}
+#barra-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.ul-nav{
+    display: none;
+}
+
+input:checked ~ ul{
+    display: block;
+}
+
+input{
+    display: none;
+}
+
+#hamburguesa{
+    padding-top: 3.5%;
+    color: rgb(114, 0, 218)
+}
+
+.seccion-inicio{
+    height:41.5rem;
+    position: relative;
+    top: 2rem;
+    margin-bottom: 4rem;
+    background-image: url(../img/Foto-prueba-portfolio2.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+h1{
+    position: relative;
+    top: 17rem;
+    margin-left: 1rem;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: bolder;
+    line-height: 2.3rem;
+    color: rgb(32, 33, 36);
+}
+
+.miNombre{
+    color: rgb(80, 0, 121);
+}
+
+
+
+/*EMPEZAR A USAR VW Y VH*/
