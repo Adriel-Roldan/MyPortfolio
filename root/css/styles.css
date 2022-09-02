@@ -47,7 +47,6 @@ input{
     height:41.5rem;
     position: relative;
     top: 2rem;
-    margin-bottom: 4rem;
     background-image: url(../img/Foto-prueba-portfolio2.jpeg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -70,5 +69,163 @@ h1{
 }
 
 
+/* AREA SOBRE MI */
 
-/*EMPEZAR A USAR VW Y VH*/
+.area-sobre-mi{
+    padding-top: 2rem;
+    background-color:rgb(62, 63, 66);
+}
+
+.titulos-areas{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: bolder;
+    text-decoration: underline rgb(80, 0, 121);
+    text-align: center;
+    color: #ffff;
+}
+
+.texto-sobre-mi{
+    margin: 0rem 2.5rem 3rem 2rem;
+    
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.5rem;
+    color: rgb(230, 230, 230)
+}
+
+#lista-sobre-mi{
+    position: relative;
+    right: 0.5rem;
+}
+
+
+.datos-sobre-mi{
+    margin-top: 1.5rem;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    color: rgb(230, 230, 230);
+}
+
+.boton-cv{
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    margin: 2rem 0rem 2rem 2rem;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: rgb(114, 0, 172);
+    border-style: none;
+    background-color: rgb(255, 255, 255);
+
+}
+.boton-cv:hover{
+    cursor: pointer;
+    transition-duration: 300ms;
+    background-color: rgb(114, 0, 172);
+    color: rgb(255, 255, 255);
+}
+
+.imagen-sobre-mi{
+    width: 16.5rem;
+    height: 28rem;
+    margin-left: 2rem;
+    padding-bottom: 3rem;
+}
+
+/* AREA PORTAFOLIO */
+
+.area-portafolio{
+    padding-top: 0.5rem;
+    background-color: rgb(112, 113, 116);
+}
+
+
+.texto-portafolio{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+    
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.5rem;
+    color: rgb(230, 230, 230)
+}
+
+.proyectos-portafolio{
+   margin-left: 3rem;
+   padding-bottom: 3rem;
+}
+
+.proyecto{
+    padding-bottom: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    color: rgb(230, 230, 230);
+    text-align: center;
+}
+
+.imagen-proyecto{
+    width: 18rem;
+    margin-top: 1rem;
+}
+
+/* AREA DE SKILLS */
+
+.area-skills{
+    padding-top: 1rem;
+    background-color:rgb(62, 63, 66);
+}
+
+.contenido-skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-right: 2rem;
+    padding-bottom: 2rem;
+    
+    
+}
+
+.fa-html5{
+    font-size: 100px;
+    color: rgb(230, 230, 230);
+}
+
+.fa-css3-alt{
+    font-size: 100px;
+    color: rgb(230, 230, 230);
+}
+
+.fa-square-js{
+    font-size: 100px;
+    color: rgb(230, 230, 230);
+}
+
+.fa-database{
+    font-size: 100px;
+    color: rgb(230, 230, 230);
+}
+
+.fa-react{
+    font-size: 100px;
+    color: rgb(230, 230, 230);
+}
+
+.texto-skill{
+    margin-top: 0.7rem;
+    margin-right: 0.5rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(201, 143, 255);
+
+}
