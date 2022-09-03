@@ -38,7 +38,7 @@
         <section id="scrollArriba" class="seccion-inicio">
             <h1>
                 Hola,<br> 
-                Soy <span class="miNombre">Adriel Roldan</span>
+                Soy <span class="miNombre">Adriel Roldan</span><br>
                 Bienvenido a mi<br>
                 Mundo.
             </h1>
@@ -64,7 +64,7 @@
                     <li class="datos-sobre-mi">Residencia: Mendoza, Argentina</li>
                 </ul>
 
-                <button class="boton-cv" >Descargar CV</button>
+                <button class="boton-cv">Descargar CV</button>
             
                 <img class="imagen-sobre-mi" src="./img/Foto-prueba-portfolio2.jpeg" alt="foto de Adriel Roldan en blanco y negro">
         
@@ -137,35 +137,29 @@
 
        <!-- AREA FORMULARIO -->
 
-       <h2 class="titulos-areas">
-        Contactame
-       </h2>
+       <div class="fondo-formulario">
+       <section class="formulario">
 
-
-       <form action="contact" method="POST">
-
-        <div>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre">
-
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido">
+            <h2 class="titulos-contacto">
+                Contacto
+            </h2>
+    
+            <form action="" class="form-contacto">
+                <label for="nombreCompleto">Nombre completo</label>
+                <input  required type="text" name="nombreCompleto" id="nombreCompleto">
+    
+                <label for="correo">Correo Electrónico</label>
+                <input required type="email" name="correo" id="correo">
+    
+                <label for="mensaje">Mensaje</label>
+                <textarea  required name="mensaje" id="mensaje"></textarea>
+                <input type="submit" value="Enviar">
+    
+            </form>
+    
+        </section>
         </div>
- 
-        <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-        </div>
-
-        <div>
-            <label for="mensaje">Mensaje</label>
-            <textarea name="textarea" rows="5" cols="30"></textarea>
-        <div>
-
-            <button>Contactarme</button>
-
-       </form>
-
+       
     </main>
 
     <footer>
@@ -175,8 +169,12 @@
         <i class="fa-solid fa-envelope"></i>
 
         <img src="./img/logoArFooter.png" alt="logo con las iniciales de Adriel Roldan en blanco">
-
+        
+        <p>Creado y diseñado por Adriel Roldan</p>
     </footer>
 
 </body>
 </html>
+
+
+<!-- INVESTIGAR SOBRA LA MINIMIZACION O LA OPTIMIZACION DE PAGINAS WEB -->
