@@ -196,6 +196,12 @@ h1{
 .fa-html5{
     font-size: 100px;
     color: rgb(230, 230, 230);
+    
+}
+
+.fa-html5:hover{
+    transform: scale(1.2, 1.2);
+    transition-duration: 400ms;
 }
 
 .fa-css3-alt{
@@ -203,9 +209,19 @@ h1{
     color: rgb(230, 230, 230);
 }
 
+.fa-css3-alt:hover{
+    transform: scale(1.2, 1.2);
+    transition-duration: 400ms;
+}
+
 .fa-square-js{
     font-size: 100px;
     color: rgb(230, 230, 230);
+}
+
+.fa-square-js:hover{
+    transform: scale(1.2, 1.2);
+    transition-duration: 400ms;
 }
 
 .fa-database{
@@ -213,9 +229,19 @@ h1{
     color: rgb(230, 230, 230);
 }
 
+.fa-database:hover{
+    transform: scale(1.2, 1.2);
+    transition-duration: 400ms;
+}
+
 .fa-react{
     font-size: 100px;
     color: rgb(230, 230, 230);
+}
+
+.fa-react:hover{
+    transform: scale(1.2, 1.2);
+    transition-duration: 400ms;
 }
 
 .texto-skill{
@@ -293,5 +319,77 @@ input[type="submit"]{
     color: rgb(255, 255, 255);
     border-style: none;
     background-color: rgb(114, 0, 172);
+}
+
+input[type="submit"]:hover{
     cursor: pointer;
+    color: rgb(114, 0, 172);
+    background-color: rgb(201, 143, 255);
+    transition-duration: 400ms;
+}
+
+
+/* AREA DEL FOOTER */
+
+.area-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    background-color: rgb(57, 0, 86);
+}
+
+
+
+.fa-linkedin{
+    margin-bottom: 2rem;
+    margin-right: 3rem;
+    font-size: 38px;
+    color:rgb(230, 230, 230);
+}
+
+.fa-linkedin:hover{
+    transition-duration: 500ms;
+    cursor: pointer;
+    color: rgb(201, 143, 255);
+}
+
+.fa-github{
+    margin-bottom: 2rem;
+    margin-right: 3rem;
+    font-size: 38px;
+    color:rgb(230, 230, 230);
+}
+
+.fa-github:hover{
+    transition-duration: 500ms;
+    cursor: pointer;
+    color: rgb(201, 143, 255);
+}
+
+.fa-envelope{
+    font-size: 38px;
+    color:rgb(230, 230, 230);
+}
+
+.fa-envelope:hover{
+    transition-duration: 500ms;
+    cursor: pointer;
+    color: rgb(201, 143, 255);
+}
+
+.texto-footer{
+    margin-top: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+.copyright{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
 }
