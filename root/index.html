@@ -16,26 +16,47 @@
 
     <header>
 
-            <nav id="barra-nav">
-                <a href="#scrollArriba"><img src="./img/logo-ar 2.png" alt="icono de la pagina con la iniciales de Adriel Roldan en morado"></a>
+        <nav id="barra-nav">
+    
+            <a href="#area-inicio"><img class="logo-header" src="./img/logo-ar 2.png" alt="icono de la pagina con la iniciales de Adriel Roldan en morado"></a>
 
-                <input type="checkbox" id="menu">
-                <label id="hamburguesa" for="menu"> ☰ </label> 
-                <ul class="ul-nav" type="none">
-                    <li>Inicio</li>
-                    <li>Sobre mi</li>
-                    <li>Portafolio</li>
-                    <li>Skills</li>                    
-                    <li>Contacto</li>
-                </ul>
-            </nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-btn">
+            <div class="bars__menu">
         
+                <span class="line1__bars-menu"></span>
+        
+                <span class="line2__bars-menu"></span>
+        
+                <span class="line3__bars-menu"></span>
+            
+            </div>
+            </label>
+    
+            <script src="./js/script.js"></script>
+
+            <ul class="ul-nav">
+    
+                <li><a class="active" href="#area-inicio">Inicio</a></li>
+    
+                <li><a class="active" href="#area-sobre-mi">Sobre mi</a></li>
+    
+                <li><a class="active"href="#area-portafolio">Portafolio</a></li>
+    
+                <li><a class="active" href="#area-skills">Skills</a></li>
+                                
+                <li><a class="active" href="#area-formulario">Contacto</a></li>
+    
+            </ul>
+
+        </nav>
+
     </header>
 
     <main>
         
         <!--INICIO-->
-        <section id="scrollArriba" class="seccion-inicio">
+        <section id="area-inicio" class="seccion-inicio">
             <h1>
                 Hola,<br> 
                 Soy <span class="miNombre">Adriel Roldan</span><br>
@@ -46,7 +67,7 @@
 
         <!--SOBRE MI -->
         
-        <section class="area-sobre-mi">
+        <section id="area-sobre-mi" class="area-sobre-mi">
             <h2 class="titulos-areas">
                 Sobre mi
             </h2>
@@ -72,7 +93,7 @@
         </section>
 
         <!-- AREA PORTAFOLIO -->
-        <section class="area-portafolio">
+        <section id="area-portafolio" class="area-portafolio">
 
             <h2 class="titulos-areas">
                 Portafolio
@@ -100,7 +121,7 @@
         </section>
 
         <!-- AREA SKILLS -->
-        <section class="area-skills">
+        <section id="area-skills" class="area-skills">
 
             <h2 class="titulos-areas">
                 Skills
@@ -109,12 +130,12 @@
             <div class="contenido-skills">
                 <ul type="none">
                     <i class="fa-brands fa-html5"></i>
-                    <li class="texto-skill">HTML5</li>
+                    <li class="texto-html">HTML5</li>
                 </ul>
 
                 <ul type="none">
                     <i class="fa-brands fa-css3-alt"></i>
-                    <li class="texto-skill">CSS3</li>
+                    <li class="texto-css">CSS3</li>
                 </ul>
         
                 <ul type="none">
@@ -129,7 +150,12 @@
 
                 <ul type="none">
                     <i class="fa-brands fa-react"></i>
-                    <li class="texto-skill">ReactJS</li>
+                    <li class="texto-react">ReactJS</li>
+                </ul>
+
+                <ul type="none">
+                    <i class="fa-brands fa-square-github"></i>
+                    <li class="texto-skill">GitHub</li>
                 </ul>
             </div>
 
@@ -137,7 +163,7 @@
 
        <!-- AREA FORMULARIO -->
 
-       <section class="formulario">
+       <section id="area-formulario" class="formulario">
 
             <h2 class="titulos-contacto">
                 Contacto
