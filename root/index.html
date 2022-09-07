@@ -41,13 +41,14 @@
     
                 <li><a class="active" href="#area-sobre-mi">Sobre mi</a></li>
     
-                <li><a class="active"href="#area-portafolio">Portafolio</a></li>
+                <li><a class="active" href="#area-portafolio">Portafolio</a></li>
     
                 <li><a class="active" href="#area-skills">Skills</a></li>
                                 
                 <li><a class="active" href="#area-formulario">Contacto</a></li>
     
             </ul>
+
 
         </nav>
 
@@ -57,12 +58,14 @@
         
         <!--INICIO-->
         <section id="area-inicio" class="seccion-inicio">
+
             <h1>
                 Hola,<br> 
                 Soy <span class="miNombre">Adriel Roldan</span><br>
                 Bienvenido a mi<br>
                 Mundo.
             </h1>
+
         </section>
 
         <!--SOBRE MI -->
@@ -79,16 +82,27 @@
                     Me considero una persona apasionada y activa a la hora de crear y aprender sobre el mundo de la programación y la creacion de sitios web útiles y significativos para el usuario. 
                 </p>
             </div>
+
+        
+        <div class="datos-boton-foto">
+            <div>
+            <div>
                 <ul id="lista-sobre-mi" type="none">
                     <li class="datos-sobre-mi">Nacimiento: 20 / 03 /2001</li>
                     <li class="datos-sobre-mi">Edad: 21 años</li>
                     <li class="datos-sobre-mi">Residencia: Mendoza, Argentina</li>
                 </ul>
+            </div>
 
-                <button class="boton-cv">Descargar CV</button>
-            
+            <div>
+                <a href="./document/ADRIEL ROLDAN CV.pdf" download="Adriel Roldan CV"><button class="boton-cv">Descargar CV</button></a>
+            </div>
+            </div>
+
+            <div class="foto-sobre-mi">
                 <img class="imagen-sobre-mi" src="./img/Foto-prueba-portfolio2.jpeg" alt="foto de Adriel Roldan en blanco y negro">
-        
+            </div>
+        </div>
 
         </section>
 
@@ -103,19 +117,22 @@
                Estos son algunos de mis proyectos.
             </p>
 
-            <div class="proyecto">
-                <img class="imagen-proyecto" src="./img/ejemplo_portafolio_proyectos 5.png" alt="agregar algo de la imagen">
-                <p>Lenguajes que se utilizaron</p>
-            </div>
 
-            <div class="proyecto">
-                <img class="imagen-proyecto" src="./img/ejemplo_portafolio_proyectos 5.png" alt="agregar algo de la imagen">
-                <p>Lenguajes que se utilizaron</p>
-            </div>
+            <div class="portafolio-proyectos">
+                <div class="proyecto">
+                    <img class="imagen-proyecto" src="./img/ejemplo_portafolio_proyectos 5.png" alt="agregar algo de la imagen">
+                    <p>Lenguajes que se utilizaron</p>
+                </div>
 
-            <div class="proyecto">
-                <img class="imagen-proyecto" src="./img/ejemplo_portafolio_proyectos 5.png" alt="agregar algo de la imagen">
-                <p>Lenguajes que se utilizaron</p>
+                <div class="proyecto">
+                    <img class="imagen-proyecto" src="./img/ejemplo_portafolio_proyectos 5.png" alt="agregar algo de la imagen">
+                    <p>Lenguajes que se utilizaron</p>
+                </div>
+
+                <div class="proyecto">
+                    <img class="imagen-proyecto" src="./img/ejemplo_portafolio_proyectos 5.png" alt="agregar algo de la imagen">
+                    <p>Lenguajes que se utilizaron</p>
+                </div>
             </div>
 
         </section>
@@ -127,36 +144,43 @@
                 Skills
             </h2>
 
-            <div class="contenido-skills">
-                <ul type="none">
+            <div class="skills-icon">
+                <div class="html-css">
                     <i class="fa-brands fa-html5"></i>
-                    <li class="texto-html">HTML5</li>
-                </ul>
-
-                <ul type="none">
+                
                     <i class="fa-brands fa-css3-alt"></i>
-                    <li class="texto-css">CSS3</li>
-                </ul>
-        
-                <ul type="none">
+                </div>
+
+                <div class="texto-html-css">
+                    <p class="texto-skill">HTML5</p>
+
+                    <p class="texto-skill">CSS3</p>
+                </div>
+                
+
+                <div class="javascript-react">
                     <i class="fa-brands fa-square-js"></i>
-                    <li class="texto-skill">JavaScript</li>
-                </ul>
 
-                <ul type="none">
-                    <i class="fas fa-database"></i>
-                    <li class="texto-skill">MySQL</li>
-                </ul>
-
-                <ul type="none">
                     <i class="fa-brands fa-react"></i>
-                    <li class="texto-react">ReactJS</li>
-                </ul>
+                </div>
 
-                <ul type="none">
+                <div class="texto-javascript-react">
+                    <p class="texto-skill">JavaScript</p>
+
+                    <p class="texto-skill">ReactJS</p>
+                </div>
+
+                <div class="sql-git">
+                    <i class="fas fa-database"></i>
+
                     <i class="fa-brands fa-square-github"></i>
-                    <li class="texto-skill">GitHub</li>
-                </ul>
+                </div>
+
+                <div class="texto-sql-git">
+                    <p class="texto-skill">MySQL</p>
+                    
+                    <p class="texto-skill">GitHub</p>
+                </div>
             </div>
 
         </section>
@@ -169,29 +193,30 @@
                 Contacto
             </h2>
     
-            <form action="" class="form-contacto">
-                <label for="nombreCompleto">Nombre completo</label>
-                <input  required type="text" name="nombreCompleto" id="nombreCompleto">
-    
-                <label for="correo">Correo Electrónico</label>
-                <input required type="email" name="correo" id="correo">
-    
-                <label for="mensaje">Mensaje</label>
-                <textarea  required name="mensaje" id="mensaje"></textarea>
-                <input type="submit" value="Enviar">
-    
-            </form>
-    
+            <div class="fondo-formulario">
+                <form id="form" action="" class="form-contacto">
+                    <label for="nombreCompleto">Nombre completo</label>
+                    <input  required type="text" name="nombreCompleto" id="nombreCompleto">
+        
+                    <label for="correo">Correo Electrónico</label>
+                    <input required type="email" name="correo" id="correo">
+        
+                    <label for="mensaje">Mensaje</label>
+                    <textarea  required name="mensaje" id="mensaje"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            <div>
         </section>
        
     </main>
 
     <footer>
     
+        
         <section class="area-footer">
-
+    
             <div class="iconos-footer">
-
+            
                 <a href="https://www.linkedin.com/in/adriel-rold%C3%A1n-011501238/" target="_blank">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
@@ -206,11 +231,14 @@
 
             </div>
 
-            <img src="./img/logoArFooter.png" alt="logo con las iniciales de Adriel Roldan en blanco">
-        
+                <img class="logo-footer" src="./img/logoArFooter.png" alt="logo con las iniciales de Adriel Roldan en blanco">
+            
+            
+            <div class="texto-footer">
             <p class="texto-footer">Creado y diseñado por Adriel Roldan</p>
 
             <p class="copyright">Copyright 2022 - Todos los derechos reservados</p>
+            </div>
 
         </section>
 
