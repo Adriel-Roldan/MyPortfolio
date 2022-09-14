@@ -189,6 +189,7 @@ h1{
 .boton-cv{
     padding: 0.8rem 1.5rem 0.8rem 1.5rem;
     margin: 2rem 0rem 2rem 2rem;
+    border-radius: 5px;
 
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -233,7 +234,81 @@ h1{
     color: rgb(230, 230, 230)
 }
 
-.proyectos-portafolio{
+
+.proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.card{
+    width: 16rem;
+    height: 22rem;
+    margin-bottom: 3rem;
+    background-color: rgb(62, 63, 66);
+    border-radius: 10px;
+}
+
+.imagen-proyecto{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.titulo-proyecto{
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: bolder;
+    text-align: start;
+    color: rgb(230,230,230);
+}
+
+.lenguajes-utilizados{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.lenguaje-proyecto{
+    width: 3rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(230,230,230);
+    background-color: rgb(114, 0, 172);
+}
+
+.boton-proyecto-adaptativo{
+    overflow: hidden;
+    padding: 0.8rem;
+    margin-left: 1.5rem;
+    border-radius: 5px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(114, 0, 172);
+
+    background-color: rgb(255, 255, 255);
+}
+
+
+.boton-proyecto-adaptativo:hover{
+    transition-duration: 0.4s;
+    color: rgb(255, 255, 255);
+    background-color: rgb(114, 0, 172);
+}
+
+/* .proyectos-portafolio{
    margin-left: 3rem;
    padding-bottom: 3rem;
 }
@@ -245,12 +320,12 @@ h1{
     font-style: normal;
     color: rgb(230, 230, 230);
     text-align: center;
-}
+} 
 
-.imagen-proyecto{
+ .imagen-proyecto{
     width: 18rem;
     margin-top: 1rem;
-}
+} */
 
 /* AREA DE SKILLS */
 
@@ -430,8 +505,11 @@ h1{
 
 input[type="submit"]{
     padding: 10px;
+    border-radius: 5px;
+
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    text-transform: uppercase;
     color: rgb(255, 255, 255);
     border-style: none;
     background-color: rgb(114, 0, 172);
@@ -441,7 +519,7 @@ input[type="submit"]:hover{
     cursor: pointer;
     color: rgb(114, 0, 172);
     background-color: rgb(201, 143, 255);
-    transition-duration: 400ms;
+    transition-duration: 0.4s;
 }
 
 
@@ -873,13 +951,20 @@ input[type="submit"]:hover{
 
 
 @media (min-width: 1500px){
+
+    h1{
+        margin-left: 10rem;
+        
+    }
+
+    /* AREA SOBRE MI */
     .titulos-areas{
         font-size: 48px;
     }
     
     .texto-sobre-mi{
         width: 50%;
-        margin-left: 45rem;
+        margin-left: 32rem;
     }
 
     .datos-boton-foto{
@@ -889,16 +974,16 @@ input[type="submit"]:hover{
     }
 
     .datos-sobre-mi{
-         margin-left: 20.5rem;
+         margin-left: 7.5rem;
     }
 
     .boton-cv{
-        margin-left: 20.5rem;
+        margin-left: 7.5rem;
     }
 
     .foto-sobre-mi{
         position: relative;
-        left: 20rem;
+        left: 10rem;
         bottom: 13rem;
     }
 }
