@@ -10,6 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Portafolio | Adriel Roldan </title>
     <link rel="shortcut icon" href="./img/logo-ar 2.png">
+    <script defer src="./js/particles.min.js"></script>
+    <script defer src="./js/app.js"></script>
+    <script defer src="./js/script.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -34,8 +37,6 @@
             
             </div>
             </label>
-    
-            <script src="./js/script.js"></script>
 
             <ul class="ul-nav">
     
@@ -80,14 +81,13 @@
         
         <!--INICIO-->
         <section id="area-inicio" class="seccion-inicio">
-
+            <div id="particles-js"></div>
             <h1>
                 Hola,<br> 
                 Soy <span class="miNombre">Adriel Roldan</span><br>
                 Bienvenido a mi<br>
                 Mundo.
             </h1>
-
         </section>
 
         <!--SOBRE MI -->
@@ -122,7 +122,7 @@
             </div>
 
             <div class="foto-sobre-mi">
-                <img class="imagen-sobre-mi" src="./img/Foto-prueba-portfolio2.jpeg" alt="foto de Adriel Roldan en blanco y negro">
+                <img class="imagen-sobre-mi" src="./img/Foto-sobre-mi.jpeg" alt="foto de Adriel Roldan en blanco y negro">
             </div>
         </div>
 
@@ -143,7 +143,7 @@
             <div class="proyectos"> 
 
                 <section class="card">
-                    <img class="imagen-proyecto" src="./img/ProyectoFinal.PNG">
+                    <img class="imagen-proyecto" src="./img/ProyectoFinal.PNG" alt="Imagen sobre proyecto de web responsive">
             
                     <h3 class="titulo-proyecto">Pagina con diseño adaptativo</h3>
             
@@ -157,50 +157,36 @@
                 </section> 
 
                 <section class="card">
-                    <img class="imagen-proyecto" src="./img/ProyectoFinal.PNG">
+                    <img class="imagen-proyecto" src="./img/ProyectoCalculadora.PNG" alt="Imagen de proyecto de calculadora">
             
-                    <h3 class="titulo-proyecto">Pagina con diseño adaptativo</h3>
+                    <h3 class="titulo-proyecto">Calculadora</h3>
             
-                    <div class="lenguajes-utilizados">
+                    <div class="lenguajes-utilizados-calculadora">
                         <p class="lenguaje-proyecto">HTML</p>
                         <p class="lenguaje-proyecto">CSS</p>
+                        <p class="lenguaje-proyecto">JS</p>
                     </div>
             
-                        <a class="boton-proyecto-adaptativo" href="https://github.com/Adriel-Roldan/Pagina-dise-o-adaptativo-mobile.git" target="_blank">Repositorio</a>
+                        <a class="boton-proyecto-adaptativo" href="https://github.com/Adriel-Roldan/Calculator.git" target="_blank">Repositorio</a>
                     
                 </section> 
             
                 <section class="card">
-                    <img class="imagen-proyecto" src="./img/ProyectoFinal.PNG">
+                    <img class="imagen-app-clima" src="./img/ProyectoClima.PNG" alt="Imagen de app del clima">
             
-                    <h3 class="titulo-proyecto">Pagina con diseño adaptativo</h3>
+                    <h3 class="titulo-proyecto">App del clima</h3>
             
                     <div class="lenguajes-utilizados">
                         <p class="lenguaje-proyecto">HTML</p>
                         <p class="lenguaje-proyecto">CSS</p>
+                        <p class="lenguaje-proyecto">JS</p>
                     </div>
         
-                        <a class="boton-proyecto-adaptativo" href="https://github.com/Adriel-Roldan/Pagina-dise-o-adaptativo-mobile.git" target="_blank">Repositorio</a>
+                        <a class="boton-proyecto-adaptativo" href="https://github.com/Adriel-Roldan/Weather-app.git" target="_blank">Repositorio</a>
                     
                 </section> 
                 
             </div>
-            <!-- <div class="portafolio-proyectos">
-                <div class="proyecto">
-                    <img class="imagen-proyecto" src="./img/ejemplo_portafolio_proyectos 5.png" alt="agregar algo de la imagen">
-                    <p>Lenguajes que se utilizaron</p>
-                </div>
-
-                <div class="proyecto">
-                    <img class="imagen-proyecto" src="./img/ejemplo_portafolio_proyectos 5.png" alt="agregar algo de la imagen">
-                    <p>Lenguajes que se utilizaron</p>
-                </div>
-
-                <div class="proyecto">
-                    <img class="imagen-proyecto" src="./img/ejemplo_portafolio_proyectos 5.png" alt="agregar algo de la imagen">
-                    <p>Lenguajes que se utilizaron</p>
-                </div>
-            </div> -->
 
         </section>
 
@@ -303,7 +289,7 @@
             </h2>
     
             <div class="fondo-formulario">
-                <form id="form" action="" class="form-contacto">
+                <form id="form" action="enviar.php" method="post" class="form-contacto">
                     <label for="nombreCompleto">Nombre completo</label>
                     <input  required type="text" name="nombreCompleto" id="nombreCompleto">
         
@@ -326,7 +312,7 @@
     
             <div class="iconos-footer">
             
-                <a href="https://www.linkedin.com/in/adriel-rold%C3%A1n-011501238/" target="_blank">
+                <a href="https://www.linkedin.com/in/adriel-roldan-011501238/" target="_blank">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
 
@@ -334,7 +320,7 @@
                     <i class="fa-brands fa-github"></i>
                 </a>
 
-                <a href="mailto:adriel.emilio3@gmail.com" target="_blank">
+                <a href="mailto:adriel.chitadino@gmail.com" target="_blank">
                     <i class="fa-solid fa-envelope"></i>
                 </a>
 

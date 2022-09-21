@@ -119,33 +119,48 @@ nav {
 
 /* AREA DEL INICIO */
 
+#particles-js{
+    height: 110vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
 .seccion-inicio{
+    width: 100%;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     margin-top: 3rem;
-    width: 100%;
-    height: 85vh;
-    background-image: url(../img/Foto-prueba.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+    
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 99;
+} 
 
 h1{
     margin-left: 2rem;
-    margin-top: 8rem;
 
     font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
+    font-size: 38px;
     font-weight: bolder;
-    line-height: 3rem;
-    color: rgb(42, 43, 46);
+    line-height: 3.5rem;
+
+    background: rgb(230,230,230);
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(74, 72, 75));
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .miNombre{
-    color: rgb(80, 0, 120);
+    background: rgb(80, 0, 120);
+    background: linear-gradient(90deg, rgb(157, 23, 224), rgb(114, 0, 172));
+    
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 
@@ -154,6 +169,8 @@ h1{
 .area-sobre-mi{
     padding-top: 2rem;
     background-color:rgb(62, 63, 66);
+    position: relative;
+    z-index: 99;
 }
 
 .titulos-areas{
@@ -178,7 +195,7 @@ h1{
 
 .datos-sobre-mi{
     margin-top: 1.5rem;
-    margin-left: 2.5rem; 
+    margin-left: 2rem; 
     
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -206,8 +223,8 @@ h1{
 }
 
 .imagen-sobre-mi{
-    width: 16.5rem;
-    height: 28rem;
+    width: 18rem;
+    height: 25.5rem;
     margin-left: 2rem;
     padding-bottom: 3rem;
 }
@@ -245,7 +262,7 @@ h1{
 
 .card{
     width: 16rem;
-    height: 22rem;
+    height: 25rem;
     margin-bottom: 3rem;
     background-color: rgb(62, 63, 66);
     border-radius: 10px;
@@ -258,30 +275,39 @@ h1{
 }
 
 .titulo-proyecto{
-    margin-left: 1.5rem;
     margin-bottom: 1rem;
+
     font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
-    font-weight: bolder;
-    text-align: start;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
     color: rgb(230,230,230);
 }
 
 .lenguajes-utilizados{
     display: flex;
     justify-content: flex-start;
+    margin-left: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.lenguajes-utilizados-calculadora{
+    display: flex;
+    justify-content: flex-start;
+    margin: 1.5rem 0rem 2.5rem 0.5rem;
 }
 
 .lenguaje-proyecto{
     width: 3rem;
+    height: 1.2rem;
     padding: 0.5rem;
     border-radius: 20px;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     margin-bottom: 2rem;
 
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 400;
     text-align: center;
     color: rgb(230,230,230);
     background-color: rgb(114, 0, 172);
@@ -308,24 +334,15 @@ h1{
     background-color: rgb(114, 0, 172);
 }
 
-/* .proyectos-portafolio{
-   margin-left: 3rem;
-   padding-bottom: 3rem;
+.imagen-app-clima{
+    width: 100%;
+    height: 40%;
+    margin-bottom: 0.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-.proyecto{
-    padding-bottom: 3rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    color: rgb(230, 230, 230);
-    text-align: center;
-} 
 
- .imagen-proyecto{
-    width: 18rem;
-    margin-top: 1rem;
-} */
 
 /* AREA DE SKILLS */
 
@@ -378,8 +395,12 @@ h1{
 }
 
 .fa-html5{
+    background-color: rgb(230,230,230);
+    background: linear-gradient(70deg, rgb(141, 45, 231), rgb(201, 143, 255));
     font-size: 100px;
-    color: rgb(230, 230, 230);
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .fa-html5:hover{
@@ -388,8 +409,12 @@ h1{
 }
 
 .fa-css3-alt{
+    background-color: rgb(230,230,230);
+    background: linear-gradient(70deg, rgb(141, 45, 231), rgb(201, 143, 255));
     font-size: 100px;
-    color: rgb(230, 230, 230);
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .fa-css3-alt:hover{
@@ -398,8 +423,12 @@ h1{
 }
 
 .fa-square-js{
+    background-color: rgb(230,230,230);
+    background: linear-gradient(70deg, rgb(141, 45, 231), rgb(201, 143, 255));
     font-size: 100px;
-    color: rgb(230, 230, 230);
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .fa-square-js:hover{
@@ -408,8 +437,12 @@ h1{
 }
 
 .fa-react{
+    background-color: rgb(230,230,230);
+    background: linear-gradient(70deg, rgb(141, 45, 231), rgb(201, 143, 255));
     font-size: 100px;
-    color: rgb(230, 230, 230);
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .fa-react:hover{
@@ -418,8 +451,12 @@ h1{
 }
 
 .fa-database{
+    background-color: rgb(230,230,230);
+    background: linear-gradient(70deg, rgb(141, 45, 231), rgb(201, 143, 255));
     font-size: 100px;
-    color: rgb(230, 230, 230);
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .fa-database:hover{
@@ -428,8 +465,12 @@ h1{
 }
 
 .fa-square-github{
+    background-color: rgb(230,230,230);
+    background: linear-gradient(70deg, rgb(141, 45, 231), rgb(201, 143, 255));
     font-size: 100px;
-    color: rgb(230, 230, 230);
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .fa-square-github:hover{
@@ -444,7 +485,8 @@ h1{
     font-style: normal;
     font-size: 16px;
     font-weight: bold;
-    color: rgb(201, 143, 255);
+
+    color: rgb(230, 230, 230); 
 }
 
 
@@ -598,16 +640,15 @@ input[type="submit"]:hover{
 /* AREA DE INICIO */
 
     h1{
-        margin-top: 15rem;
-        margin-left: 5rem;
-        font-size: 56px;
-        line-height: 4rem;       
+        margin-left: 4rem;
+        font-size: 62px;
+        line-height: 4.5rem;       
     }
 
 
     .seccion-inicio{
             width: 100%;
-            height: 80vh;
+            height: 90vh;
     }
 
 
@@ -636,7 +677,7 @@ input[type="submit"]:hover{
     
     .boton-cv{
         font-size: 20px;
-        margin-left: 2.5rem;
+        margin-left: 2rem;
     }
  
     .imagen-sobre-mi{
@@ -823,13 +864,13 @@ input[type="submit"]:hover{
     /* AREA DE INICIO */
 
     h1{
-        font-size: 60px;     
+        font-size: 80px;
+        line-height: 5.5rem;     
     }
 
 
     .seccion-inicio{
-        width: 100%;
-        height: 80vh;
+        height: 90vh;
     }
 
 
@@ -956,6 +997,10 @@ input[type="submit"]:hover{
         margin-left: 10rem;
         
     }
+  
+    .seccion-inicio{
+            height: 95vh;
+    }
 
     /* AREA SOBRE MI */
     .titulos-areas{
@@ -974,16 +1019,22 @@ input[type="submit"]:hover{
     }
 
     .datos-sobre-mi{
-         margin-left: 7.5rem;
+         margin-left: 6rem;
     }
 
     .boton-cv{
-        margin-left: 7.5rem;
+        margin-left: 6rem;
     }
 
     .foto-sobre-mi{
         position: relative;
         left: 10rem;
+        bottom: 15rem;
+    }
+}
+
+@media (min-width: 1809px){
+    .foto-sobre-mi{
         bottom: 13rem;
     }
 }
