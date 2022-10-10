@@ -243,7 +243,6 @@ h1{
     margin-top: 1.5rem;
     text-align: center;
     
-    
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -261,7 +260,7 @@ h1{
 }
 
 .card{
-    width: 16rem;
+    width: 26rem;
     height: 25rem;
     margin-bottom: 3rem;
     background-color: rgb(62, 63, 66);
@@ -270,47 +269,27 @@ h1{
 
 .imagen-proyecto{
     width: 100%;
+    height: 13.3em;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
+
 .titulo-proyecto{
-    margin-bottom: 1rem;
+    margin: 0em 1em 0.5em 1rem;
 
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 400;
-    text-align: center;
     color: rgb(230,230,230);
 }
 
-.lenguajes-utilizados{
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 0.5rem;
-    margin-bottom: 2.5rem;
-}
-
-.lenguajes-utilizados-calculadora{
-    display: flex;
-    justify-content: flex-start;
-    margin: 1.5rem 0rem 2.5rem 0.5rem;
-}
-
-.lenguaje-proyecto{
-    width: 3rem;
-    height: 1.2rem;
-    padding: 0.5rem;
-    border-radius: 20px;
-    margin-left: 0.5rem;
-    margin-bottom: 2rem;
-
+.texto-proyecto{
+    margin: 0em 1em 2em 1em;
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
     font-weight: 400;
-    text-align: center;
-    color: rgb(230,230,230);
-    background-color: rgb(114, 0, 172);
+    color: rgb(230, 230, 230);
 }
 
 .boton-proyecto-adaptativo{
@@ -327,22 +306,11 @@ h1{
     background-color: rgb(255, 255, 255);
 }
 
-
 .boton-proyecto-adaptativo:hover{
     transition-duration: 0.4s;
     color: rgb(255, 255, 255);
     background-color: rgb(114, 0, 172);
 }
-
-.imagen-app-clima{
-    width: 100%;
-    height: 40%;
-    margin-bottom: 0.5rem;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-
 
 /* AREA DE SKILLS */
 
@@ -633,7 +601,6 @@ input[type="submit"]:hover{
 }
 
 
-/* DISEÑO RESPONSIVE (TABLET) */
 
 @media (min-width: 700px){
 
