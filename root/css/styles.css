@@ -244,7 +244,7 @@ h1{
     text-align: center;
     
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
     line-height: 1.5rem;
     color: rgb(230, 230, 230)
@@ -261,9 +261,9 @@ h1{
 
 .card{
     width: 26rem;
-    height: 25rem;
-    margin-bottom: 3rem;
-    background-color: rgb(62, 63, 66);
+    height: 31rem;
+    margin: 0em 1em 2em 1em;
+    background-color: rgba(62, 63, 66, 0.6);
     border-radius: 10px;
 }
 
@@ -276,26 +276,53 @@ h1{
 
 
 .titulo-proyecto{
-    margin: 0em 1em 0.5em 1rem;
+    margin: 0.5em 1em 0.5em 1rem;
 
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 600;
     color: rgb(230,230,230);
 }
 
 .texto-proyecto{
-    margin: 0em 1em 2em 1em;
+    margin: 0em 1em 1em 1em;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: rgb(230, 230, 230);
+    line-height: 24px;
+}
+
+.lenguajes-utilizados{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+.lenguajes-utilizados-calculadora{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0rem 0rem 2rem 1rem;
+}
+
+.imagen-html {
+    margin-right: 10px;
+}
+
+.imagen-css {
+    margin-right: 17px;
+}
+
+.imagen-js {
+    height: 40px;
+    margin-top: 0.2rem;
 }
 
 .boton-proyecto-adaptativo{
     overflow: hidden;
     padding: 0.8rem;
-    margin-left: 1.5rem;
+    margin-left: 1rem;
     border-radius: 5px;
 
     font-family: 'Montserrat', sans-serif;
@@ -656,12 +683,16 @@ input[type="submit"]:hover{
 
     /* AREA PORTAFOLIO */
 
+    .card {
+        width: 80vw;
+        height: 38em;
+    }
     
     .texto-portafolio{
         margin: 1.5rem 2rem 1rem 2rem;
 
         text-align: center;
-        font-size: 20px;
+        font-size: 26px;
     }
     
     .proyectos-portafolio{
@@ -674,6 +705,7 @@ input[type="submit"]:hover{
     }
     
     .imagen-proyecto{
+        height: 17em;
         margin-bottom: 1rem;
     }
 
@@ -683,6 +715,31 @@ input[type="submit"]:hover{
         justify-content: space-around;
     }
 
+    .titulo-proyecto {
+        font-size: 28px;
+        margin-left: 1.2rem;
+    }
+
+    .texto-proyecto {
+        font-size: 20px;
+    }
+
+    .lenguajes-utilizados {
+        margin-bottom: 3em;
+    }
+
+    .lenguajes-utilizados-calculadora {
+        margin-bottom: 3em;
+    }
+    
+    .imagen-css {
+        margin-right: 18px;
+    }
+
+    .boton-proyecto-adaptativo {
+        padding: 20px;
+        font-size: 20px;
+    }
 
     /* AREA DE SKILLS */
     
@@ -876,6 +933,31 @@ input[type="submit"]:hover{
 
     /* AREA DEL PORTAFOLIO */
 
+    .card {
+        width: 45vw;
+        height: 47em;
+    }
+    
+    .proyectos-portafolio{
+       margin-left: 3rem;
+       padding-bottom: 3rem;
+    }
+    
+    .imagen-proyecto{
+        height: 20em;
+        margin-bottom: 1rem;
+    }
+
+    .titulo-proyecto {
+        font-size: 36px;
+        margin-left: 0.7em;
+    }
+
+    .texto-proyecto {
+        font-size: 26px;
+        line-height: 35px;
+    }
+
     .texto-portafolio{
         font-size: 22px;
     }
@@ -998,11 +1080,33 @@ input[type="submit"]:hover{
         left: 10rem;
         bottom: 15rem;
     }
+
+    .proyectos {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .texto-portafolio {
+        font-size: 32px;
+    }
+
+    .card {
+        width: 40vw;
+    }
 }
 
 @media (min-width: 1809px){
     .foto-sobre-mi{
         bottom: 13rem;
     }
+
+    .card {
+        height: 47rem;
+    }
+
+    .imagen-proyecto {
+        height: 23rem;
+    }
+    
 }
 
