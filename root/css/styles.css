@@ -276,17 +276,17 @@ h1{
 
 
 .titulo-proyecto{
-    margin: 0.5em 1em 0.5em 1rem;
+    margin: 0em 1em 0.5em 1rem;
 
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     color: rgb(230,230,230);
 }
 
 .texto-proyecto{
     margin: 0em 1em 1em 1em;
-    font-size: 16px;
+    font-size: 12px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: rgb(230, 230, 230);
@@ -459,16 +459,16 @@ h1{
     transition-duration: 400ms;
 }
 
-.fa-square-github{
+.fa-git-alt{
     background-color: rgb(230,230,230);
     background: linear-gradient(70deg, rgb(141, 45, 231), rgb(201, 143, 255));
-    font-size: 100px;
+    font-size: 110px;
 
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
 
-.fa-square-github:hover{
+.fa-git-alt:hover{
     transform: scale(1.2, 1.2);
     transition-duration: 400ms;
 }
@@ -764,7 +764,7 @@ input[type="submit"]:hover{
         font-size: 120px;
     }
     
-    .fa-square-github{
+    .fa-git-alt{
         font-size: 120px;
     }
     
@@ -995,9 +995,25 @@ input[type="submit"]:hover{
         font-weight: bold;
         color: rgb(201, 143, 255);
     }
+
+    .icono-texto-html {
+        position: relative;
+        right: 0.3rem;
+    }
+
+    .icono-texto-css {
+        position: relative;
+        right: 0.6rem;
+    }
+
+    .icono-texto-js {
+        position: relative;
+        right: 1.5rem;
+    }
+
     .icono-texto-react{
         position: relative;
-        right: 1rem;
+        right: 2.8rem;
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-size: 22px;
@@ -1007,13 +1023,19 @@ input[type="submit"]:hover{
 
     .icono-texto-mysql{
         position: relative;
-        right: 0.6rem;
+        right: 2.8rem;
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-size: 22px;
         font-weight: bold;
         color: rgb(201, 143, 255);
     }
+
+    .icono-texto-git {
+        position: relative;
+        right: 1.4rem;
+    }
+
     /* AREA DEL FORMULARIO */
 
     .titulos-contacto{
